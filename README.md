@@ -1,7 +1,9 @@
 # FinalProjectCMSC510
 
 This problem involves navigating a grid while managing limited resources (health) in the presence of "unsafe" cells that decrease your health. Starting from the top-left corner, the goal is to determine if you can reach the bottom-right corner using valid moves (up, down, left, right) without depleting your health. Unsafe cells (denoted by 1) reduce your health by one, so you must plan your path carefully to ensure you reach the destination with a health value of at least 1.
+
 Specific problem statement can be found here: https://leetcode.com/problems/find-a-safe-walk-through-a-grid/description/?envType=problem-list-v2&envId=shortest-path
+
 A real-world application could be a video game scenario where a player needs to navigate through a maze while avoiding traps that decrease their health. The goal is to reach the exit of the maze with enough health remaining to survive. This problem models the pathfinding logic needed to guide the player safely to the destination.
 My approach to the problem involves using Breadth-First Search, which is suitable for finding shortest or possible paths in a grid. Below are steps that I took to solve the problem:
 
@@ -18,6 +20,9 @@ My approach to the problem involves using Breadth-First Search, which is suitabl
 Some problems I had when solving the problem includes:
 
 1: How to make sure that we do not move out of the grid.
+
 2: How to represent the movement from one cell to another.
+
 3: How to use the visited matrix to store max health and avoid redundant calculations.
+
 
